@@ -90,6 +90,15 @@
     .month-link { border-left: none; border-bottom: 2px solid transparent; border-radius: 4px; }
     .month-link.active { border-bottom-color: var(--accent); }
   }
+
+  .lb-inner { display:flex; flex-direction:column; align-items:center; cursor:default; }
+  .lb-inner img { max-width:90vw; max-height:78vh; border-radius:8px; }
+  .lb-controls { display:flex; align-items:center; gap:24px; margin-top:16px; }
+  .lb-btn { background:rgba(255,255,255,0.2); color:#fff; border:none; border-radius:50%; width:44px; height:44px; font-size:22px; cursor:pointer; }
+  .lb-btn:hover { background:rgba(255,255,255,0.4); }
+  .lb-empty { width:44px; height:44px; display:inline-block; }
+  .lb-num { color:rgba(255,255,255,0.85); font-size:15px; }
+  .lb-x { position:fixed; top:18px; right:22px; background:rgba(255,255,255,0.2); color:#fff; border:none; border-radius:50%; width:38px; height:38px; font-size:18px; cursor:pointer; }
 </style>
 </head>
 <body>
@@ -168,15 +177,33 @@ function scrollToMonth(month, el) {
   if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+let _lbEntry = null, _lbIdx = 0;
 function lightbox(id, idx) {
-  const e = entries.find(x => x.id == id);
-  if (!e) return;
+  _lbEntry = entries.find(x => x.id == id);
+  if (!_lbEntry) return;
+  _lbIdx = idx;
+  showLightbox();
+}
+function showLightbox() {
+  const ex = document.getElementById('lb-overlay');
+  if (ex) ex.remove();
+  const e = _lbEntry, total = e.images.length;
   const lb = document.createElement('div');
+  lb.id = 'lb-overlay';
   lb.className = 'lightbox';
-  lb.innerHTML = `<img src="${e.images[idx]}" alt="Bild">`;
   lb.onclick = () => lb.remove();
+  lb.innerHTML = '<div class="lb-inner" onclick="event.stopPropagation()">' +
+    '<img src="' + e.images[_lbIdx] + '" alt="Bild">' +
+    '<div class="lb-controls">' +
+    (_lbIdx > 0 ? '<button class="lb-btn" onclick="lbPrev()">←</button>' : '<span class="lb-empty"></span>') +
+    '<span class="lb-num">' + (_lbIdx+1) + ' / ' + total + '</span>' +
+    (_lbIdx < total-1 ? '<button class="lb-btn" onclick="lbNext()">→</button>' : '<span class="lb-empty"></span>') +
+    '</div></div>' +
+    '<button class="lb-x" onclick="document.getElementById('lb-overlay').remove()">✕</button>';
   document.body.appendChild(lb);
 }
+function lbPrev() { _lbIdx--; showLightbox(); }
+function lbNext() { _lbIdx++; showLightbox(); }
 
 render();
 </script>
