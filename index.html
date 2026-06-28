@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kolonistugan – Byggdagbok</title>
+<style>
+  /* === FÄRGTEMA – ändra bara dessa för att byta tema === */
+  :root {
+    --accent: #378ADD;
+    --accent-light: #E6F1FB;
+    --accent-mid: #378ADD;
+    --accent-dark: #0C447C;
+    --accent-border: #B5D4F4;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f7fa; color: #1a1a1a; }
+
+  header {
+    background: var(--accent-dark);
+    color: #fff;
+    padding: 1.5rem 2rem;
+  }
+  header h1 { font-size: 1.6rem; font-weight: 500; }
+  header p { font-size: 0.95rem; opacity: 0.8; margin-top: 4px; }
+
+  .about {
+    background: var(--accent-light);
+    border-bottom: 1px solid var(--accent-border);
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+    color: var(--accent-dark);
+  }
+
+  .layout {
+    display: flex;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  /* SIDOMENY */
+  #sidebar {
+    width: 180px;
+    min-width: 180px;
+    position: sticky;
+    top: 1rem;
+  }
+  #sidebar h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #888;
+    margin-bottom: 0.5rem;
+  }
+  .month-link {
+    display: block;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    color: #555;
+    cursor: pointer;
+    border-left: 2px solid transparent;
+    border-radius: 0 4px 4px 0;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .month-link:hover { color: var(--accent); background: var(--accent-light); }
+  .month-link.active { color: var(--accent); border-left-color: var(--accent); background: var(--accent-light); font-weight: 500; }
+
+  /* HUVUDINNEHÅLL */
+  #main { flex: 1; min-width: 0; }
+
+  .add-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 18px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: opacity 0.15s;
+  }
+  .add-btn:hover { opacity: 0.88; }
+
+  #add-form {
+    background: #fff;
+    border: 1px solid #dde3ed;
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    display: none;
+  }
+  #add-form h3 { font-size: 1rem; font-weight: 500; margin-bottom: 1rem; }
+  .form-row { margin-bottom: 12px; }
+  .form-row label { display: block; font-size: 0.82rem; color: #666; margin-bottom: 4px; }
+  .form-row input, .form-row textarea {
+    width: 100%;
+    border: 1px solid #ccd3e0;
+    border-radius: 7px;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    background: #fff;
+    color: #1a1a1a;
+  }
+  .form-row textarea { min-height: 90px; resize: vertical; }
+  .form-actions { display: flex; gap: 8px; margin-top: 8px; }
+  .btn-save { background: var(--accent); color: #fff; border: none; border-radius: 7px; padding: 8px 20px; font-size: 0.9rem; cursor: pointer; font-weight: 500; }
+  .btn-cancel { background: #fff; border: 1px solid #ccd3e0; border-radius: 7px; padding: 8px 14px; font-size: 0.9rem; cursor: pointer; color: #666; }
+
+  .month-section { margin-bottom: 2.5rem; }
+  .month-heading {
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: #999;
+    margin-bottom: 1rem;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #e5e9f0;
+  }
+
+  .entry-card {
+    background: #fff;
+    border: 1px solid #e5e9f0;
+    border-radius: 12px;
+    padding: 1.1rem 1.3rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.15s;
+  }
+  .entry-card:hover { border-color: #b5c8e0; }
+  .entry-date { font-size: 0.78rem; color: #aaa; margin-bottom: 3px; }
+  .entry-title { font-size: 1rem; font-weight: 500; color: #1a1a1a; margin-bottom: 6px; }
+  .entry-body { font-size: 0.9rem; color: #555; line-height: 1.7; white-space: pre-wrap; }
+  .entry-images { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .entry-img { width: 100px; height: 78px; object-fit: cover; border-radius: 7px; border: 1px solid #e5e9f0; cursor: pointer; }
+  .img-upload-label {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 0.78rem; color: #aaa; cursor: pointer; padding: 4px 0; margin-top: 6px;
+  }
+  .img-upload-label:hover { color: var(--accent); }
+  .img-upload-label input { display: none; }
+
+  #empty-state { text-align: center; padding: 3rem 1rem; color: #bbb; font-size: 1rem; }
+
+  /* LIGHTBOX */
+  .lightbox {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 999; cursor: zoom-out;
+  }
+  .lightbox img { max-width: 92vw; max-height: 92vh; border-radius: 8px; }
+
+  /* MOBIL */
+  @media (max-width: 640px) {
+    .layout { flex-direction: column; }
+    #sidebar { width: 100%; position: static; display: flex; gap: 8px; flex-wrap: wrap; }
+    #sidebar h3 { display: none; }
+    .month-link { border-left: none; border-bottom: 2px solid transparent; border-radius: 4px; }
+    .month-link.active { border-bottom-color: var(--accent); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏡 Kolonistugan</h1>
+  <p>Byggdagbok – Linköping</p>
+</header>
+
+<div class="about">
+  <strong>Om projektet:</strong> Nybyggnation av kolonilottstuga på 14,5 kvm i Linköping, med efterföljande rivning av befintlig stuga. Följ bygget här!
+</div>
+
+<div class="layout">
+  <nav id="sidebar">
+    <h3>Månader</h3>
+    <div id="month-nav"></div>
+  </nav>
+
+  <main id="main">
+    <button class="add-btn" onclick="toggleForm()">+ Nytt arbetspass</button>
+
+    <div id="add-form">
+      <h3>Logga arbetspass</h3>
+      <div class="form-row">
+        <label>Datum</label>
+        <input type="date" id="f-date">
+      </div>
+      <div class="form-row">
+        <label>Rubrik</label>
+        <input type="text" id="f-title" placeholder="T.ex. Grunden gjuten">
+      </div>
+      <div class="form-row">
+        <label>Beskrivning</label>
+        <textarea id="f-body" placeholder="Vad gjordes? Hur gick det?"></textarea>
+      </div>
+      <div class="form-actions">
+        <button class="btn-save" onclick="saveEntry()">Spara</button>
+        <button class="btn-cancel" onclick="toggleForm()">Avbryt</button>
+      </div>
+    </div>
+
+    <div id="entries-container">
+      <div id="empty-state">Inga arbetspass loggade ännu.<br>Tryck på "+ Nytt arbetspass" för att börja!</div>
+    </div>
+  </main>
+</div>
+
+<script>
+const STORAGE_KEY = 'kolonistugan-dagbok-v1';
+let entries = [];
+
+function load() {
+  try {
+    const d = localStorage.getItem(STORAGE_KEY);
+    if (d) entries = JSON.parse(d);
+  } catch(e) { entries = []; }
+  render();
+}
+
+function save() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(entries)); } catch(e) {}
+}
+
+function toggleForm() {
+  const f = document.getElementById('add-form');
+  f.style.display = f.style.display === 'block' ? 'none' : 'block';
+  if (f.style.display === 'block') {
+    document.getElementById('f-date').value = new Date().toISOString().split('T')[0];
+    document.getElementById('f-title').focus();
+  }
+}
+
+function saveEntry() {
+  const date = document.getElementById('f-date').value;
+  const title = document.getElementById('f-title').value.trim();
+  const body = document.getElementById('f-body').value.trim();
+  if (!date || !title) { alert('Fyll i datum och rubrik!'); return; }
+  entries.unshift({ id: Date.now(), date, title, body, images: [] });
+  save();
+  document.getElementById('f-title').value = '';
+  document.getElementById('f-body').value = '';
+  document.getElementById('add-form').style.display = 'none';
+  render();
+}
+
+function addImages(id, files) {
+  const e = entries.find(x => x.id === id);
+  if (!e) return;
+  const promises = Array.from(files).map(f => new Promise(res => {
+    const r = new FileReader();
+    r.onload = ev => res(ev.target.result);
+    r.readAsDataURL(f);
+  }));
+  Promise.all(promises).then(imgs => {
+    e.images = (e.images || []).concat(imgs);
+    save();
+    render();
+  });
+}
+
+function groupByMonth(entries) {
+  const months = {};
+  entries.forEach(e => {
+    const d = new Date(e.date);
+    const key = d.toLocaleString('sv-SE', { year: 'numeric', month: 'long' });
+    if (!months[key]) months[key] = [];
+    months[key].push(e);
+  });
+  return months;
+}
+
+function render() {
+  const container = document.getElementById('entries-container');
+  const nav = document.getElementById('month-nav');
+
+  if (!entries.length) {
+    container.innerHTML = '<div id="empty-state">Inga arbetspass loggade ännu.<br>Tryck på "+ Nytt arbetspass" för att börja!</div>';
+    nav.innerHTML = '';
+    return;
+  }
+
+  const grouped = groupByMonth(entries);
+  const keys = Object.keys(grouped);
+
+  nav.innerHTML = keys.map((m, i) =>
+    `<a class="month-link${i===0?' active':''}" onclick="scrollTo('${m}',this)" href="#">${m}</a>`
+  ).join('');
+
+  container.innerHTML = keys.map(month => {
+    const cards = grouped[month].map(e => {
+      const imgs = (e.images||[]).map((src,i) =>
+        `<img class="entry-img" src="${src}" onclick="lightbox('${e.id}',${i})" alt="Byggbild">`
+      ).join('');
+      return `<article class="entry-card" id="e-${e.id}">
+        <div class="entry-date">${new Date(e.date).toLocaleDateString('sv-SE',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}</div>
+        <div class="entry-title">${e.title}</div>
+        ${e.body ? `<div class="entry-body">${e.body}</div>` : ''}
+        ${imgs ? `<div class="entry-images">${imgs}</div>` : ''}
+        <label class="img-upload-label">📷 Lägg till bilder
+          <input type="file" accept="image/*" multiple onchange="addImages(${e.id},this.files)">
+        </label>
+      </article>`;
+    }).join('');
+    return `<section class="month-section" data-month="${month}"><div class="month-heading">${month}</div>${cards}</section>`;
+  }).join('');
+}
+
+function scrollTo(month, el) {
+  event.preventDefault();
+  document.querySelectorAll('.month-link').forEach(x => x.classList.remove('active'));
+  el.classList.add('active');
+  const sec = document.querySelector(`.month-section[data-month="${month}"]`);
+  if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function lightbox(id, idx) {
+  const e = entries.find(x => x.id == id);
+  if (!e) return;
+  const lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML = `<img src="${e.images[idx]}" alt="Bild">`;
+  lb.onclick = () => lb.remove();
+  document.body.appendChild(lb);
+}
+
+load();
+</script>
+</body>
+</html>
