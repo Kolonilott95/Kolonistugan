@@ -69,19 +69,11 @@
   #empty-state { text-align: center; padding: 3rem 1rem; color: #bbb; font-size: 1rem; }
 
   .lightbox {
-    position: fixed; inset: 0; background: rgba(0,0,0,0.85);
+    position: fixed; inset: 0; background: rgba(0,0,0,0.8);
     display: flex; align-items: center; justify-content: center;
     z-index: 999; cursor: zoom-out;
   }
-  .lb-inner { display: flex; flex-direction: column; align-items: center; cursor: default; }
-  .lb-inner img { max-width: 90vw; max-height: 80vh; border-radius: 8px; display: block; }
-  .lb-controls { display: flex; align-items: center; gap: 20px; margin-top: 14px; }
-  .lb-btn { background: rgba(255,255,255,0.15); color: #fff; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 20px; cursor: pointer; transition: background 0.15s; }
-  .lb-btn:hover { background: rgba(255,255,255,0.3); }
-  .lb-btn-empty { width: 40px; height: 40px; display: inline-block; }
-  .lb-counter { color: rgba(255,255,255,0.8); font-size: 14px; min-width: 50px; text-align: center; }
-  .lb-close { position: fixed; top: 20px; right: 24px; background: rgba(255,255,255,0.15); color: #fff; border: none; border-radius: 50%; width: 36px; height: 36px; font-size: 18px; cursor: pointer; }
-  .lb-close:hover { background: rgba(255,255,255,0.3); }
+  .lightbox img { max-width: 92vw; max-height: 92vh; border-radius: 8px; }
 
   @media (max-width: 640px) {
     .layout { flex-direction: column; }
@@ -97,7 +89,7 @@
   .lb-btn { background:rgba(255,255,255,0.2); color:#fff; border:none; border-radius:50%; width:44px; height:44px; font-size:22px; cursor:pointer; }
   .lb-btn:hover { background:rgba(255,255,255,0.4); }
   .lb-empty { width:44px; height:44px; display:inline-block; }
-  .lb-num { color:rgba(255,255,255,0.85); font-size:15px; }
+  .lb-num { color:rgba(255,255,255,0.85); font-size:15px; min-width:50px; text-align:center; }
   .lb-x { position:fixed; top:18px; right:22px; background:rgba(255,255,255,0.2); color:#fff; border:none; border-radius:50%; width:38px; height:38px; font-size:18px; cursor:pointer; }
 </style>
 </head>
@@ -195,11 +187,11 @@ function showLightbox() {
   lb.innerHTML = '<div class="lb-inner" onclick="event.stopPropagation()">' +
     '<img src="' + e.images[_lbIdx] + '" alt="Bild">' +
     '<div class="lb-controls">' +
-    (_lbIdx > 0 ? '<button class="lb-btn" onclick="lbPrev()">←</button>' : '<span class="lb-empty"></span>') +
+    (_lbIdx > 0 ? '<button class="lb-btn" onclick="lbPrev()">&#8592;</button>' : '<span class="lb-empty"></span>') +
     '<span class="lb-num">' + (_lbIdx+1) + ' / ' + total + '</span>' +
-    (_lbIdx < total-1 ? '<button class="lb-btn" onclick="lbNext()">→</button>' : '<span class="lb-empty"></span>') +
+    (_lbIdx < total-1 ? '<button class="lb-btn" onclick="lbNext()">&#8594;</button>' : '<span class="lb-empty"></span>') +
     '</div></div>' +
-    '<button class="lb-x" onclick="document.getElementById('lb-overlay').remove()">✕</button>';
+    '<button class="lb-x" onclick="document.getElementById('lb-overlay').remove()">&#x2715;</button>';
   document.body.appendChild(lb);
 }
 function lbPrev() { _lbIdx--; showLightbox(); }
