@@ -45,6 +45,14 @@
   }
   .month-link:hover { color: var(--accent); background: var(--accent-light); }
   .month-link.active { color: var(--accent); border-left-color: var(--accent); background: var(--accent-light); font-weight: 500; }
+  .entry-link {
+    display: block; padding: 5px 10px; font-size: 0.82rem; color: #666;
+    cursor: pointer; border-left: 2px solid transparent; border-radius: 0 4px 4px 0;
+    text-decoration: none; transition: all 0.15s; line-height: 1.35;
+  }
+  .entry-link:hover { color: var(--accent); background: var(--accent-light); }
+  .entry-link.active { color: var(--accent); border-left-color: var(--accent); background: var(--accent-light); font-weight: 500; }
+  .nav-divider { height: 1px; background: #e5e9f0; margin: 8px 10px; }
 
   #main { flex: 1; min-width: 0; }
 
@@ -81,6 +89,8 @@
     #sidebar h3 { display: none; }
     .month-link { border-left: none; border-bottom: 2px solid transparent; border-radius: 4px; }
     .month-link.active { border-bottom-color: var(--accent); }
+    .entry-link { border-left: none; border-bottom: 2px solid transparent; font-size: 0.8rem; }
+    .entry-link.active { border-bottom-color: var(--accent); }
   }
 </style>
 </head>
@@ -98,7 +108,7 @@
 
 <div class="layout">
   <nav id="sidebar">
-    <h3>Månader</h3>
+    <h3>Arbetspass</h3>
     <div id="month-nav"></div>
   </nav>
   <main id="main">
@@ -108,9 +118,21 @@
 
 <script src="data.js"></script>
 <script>
-function groupByMonth(entries) {
+function isoWeek(d) {
+  const x = new Date(d.getTime());
+  x.setHours(0, 0, 0, 0);
+  x.setDate(x.getDate() + 3 - (x.getDay() + 6) % 7);
+  const week1 = new Date(x.getFullYear(), 0, 4);
+  return 1 + Math.round(((x - week1) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
+}
+
+function sortedEntries() {
+  return [...entries].sort((a, b) => a.date.localeCompare(b.date) || a.id - b.id);
+}
+
+function groupByMonth(sorted) {
   const months = {};
-  entries.forEach(e => {
+  sorted.forEach(e => {
     const d = new Date(e.date);
     const key = d.toLocaleString('sv-SE', { year: 'numeric', month: 'long' });
     if (!months[key]) months[key] = [];
@@ -119,22 +141,31 @@ function groupByMonth(entries) {
   return months;
 }
 
+function entryNavLabel(e, i) {
+  const d = new Date(e.date);
+  const week = isoWeek(d);
+  const day = d.toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' });
+  const prefix = i === 0 ? 'Början · ' : `v.${week} · `;
+  return prefix + day + ' – ' + e.title;
+}
+
 function render() {
   const container = document.getElementById('entries-container');
   const nav = document.getElementById('month-nav');
+  const sorted = sortedEntries();
 
-  if (!entries.length) {
+  if (!sorted.length) {
     container.innerHTML = '<div id="empty-state">Inga arbetspass loggade ännu – kom tillbaka snart!</div>';
     nav.innerHTML = '';
     return;
   }
 
-  const grouped = groupByMonth(entries);
-  const keys = Object.keys(grouped);
-
-  nav.innerHTML = keys.map((m, i) =>
-    `<a class="month-link${i===0?' active':''}" onclick="scrollToMonth('${m}',this)" href="#">${m}</a>`
+  nav.innerHTML = sorted.map((e, i) =>
+    `<a class="entry-link${i===0?' active':''}" onclick="scrollToEntry(${e.id},this)" href="#">${entryNavLabel(e, i)}</a>`
   ).join('');
+
+  const grouped = groupByMonth(sorted);
+  const keys = Object.keys(grouped);
 
   container.innerHTML = keys.map(month => {
     const cards = grouped[month].map(e => {
@@ -152,12 +183,12 @@ function render() {
   }).join('');
 }
 
-function scrollToMonth(month, el) {
+function scrollToEntry(id, el) {
   event.preventDefault();
-  document.querySelectorAll('.month-link').forEach(x => x.classList.remove('active'));
+  document.querySelectorAll('.entry-link').forEach(x => x.classList.remove('active'));
   el.classList.add('active');
-  const sec = document.querySelector(`.month-section[data-month="${month}"]`);
-  if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const card = document.getElementById('e-' + id);
+  if (card) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 var _lbe = null, _lbi = 0;
