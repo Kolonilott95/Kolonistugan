@@ -127,7 +127,7 @@ function isoWeek(d) {
 }
 
 function sortedEntries() {
-  return [...entries].sort((a, b) => a.date.localeCompare(b.date) || a.id - b.id);
+  return [...entries].sort((a, b) => b.date.localeCompare(a.date) || b.id - a.id);
 }
 
 function groupByMonth(sorted) {
@@ -141,12 +141,11 @@ function groupByMonth(sorted) {
   return months;
 }
 
-function entryNavLabel(e, i) {
+function entryNavLabel(e) {
   const d = new Date(e.date);
   const week = isoWeek(d);
   const day = d.toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' });
-  const prefix = i === 0 ? 'Början · ' : `v.${week} · `;
-  return prefix + day + ' – ' + e.title;
+  return `v.${week} · ${day} – ${e.title}`;
 }
 
 function render() {
@@ -161,7 +160,7 @@ function render() {
   }
 
   nav.innerHTML = sorted.map((e, i) =>
-    `<a class="entry-link${i===0?' active':''}" onclick="scrollToEntry(${e.id},this)" href="#">${entryNavLabel(e, i)}</a>`
+    `<a class="entry-link${i===0?' active':''}" onclick="scrollToEntry(${e.id},this)" href="#">${entryNavLabel(e)}</a>`
   ).join('');
 
   const grouped = groupByMonth(sorted);
