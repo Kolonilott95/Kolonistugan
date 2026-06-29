@@ -1,0 +1,7 @@
+bilder/inkommande/*.zip
+bilder/inkommande/_tmp*/
+bilder/inkommande/*.jpg
+bilder/inkommande/*.jpeg
+bilder/inkommande/*.png
+bilder/inkommande/*.heic
+node_modules/
