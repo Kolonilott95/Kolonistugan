@@ -1,6 +1,18 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 5,
+    "date": "2026-06-29",
+    "title": "Nya adresser",
+    "body": "Myrorna hade det bra under parasollplattorna. Mörkt och stabilt, med stabil tyngd som skydd ovanifrån Ett tak att lita på för en myra. Precis den sorts trygghet man kan bygga ett helt liv kring — ända tills någon annan bestämmer sig för att ändra formen på deras trygga hem.\n\nOmvärlden blir plötsligt annorlunda, ”äggen”, eller vad det nu är, ligger där, vita, tätt packade, mitt i det som var deras trygga värld till alldeles för en stund sen. Och när man står en stund och tittar på paniken som uppstått, lite generad, som om man stört något man egentligen visste fanns, men inte tänkt på.\n\nResten av dagen fortsätter i samma anda, fast i större skala. Saker som stått stilla i åratal får plötsligt nya adresser.\nBordet, Plattorna, Parasollet. Jag som bara tänkt att början skulle handla om att bara ta bort lite gräs — och visst, gräset försvinner, rektangeln växer långsamt till sin fulla potential, brun jord mot grön kant. Men det är inte hela berättelsen. Det är bara det som syns just nu. Det finns många andra tankar om saker som behöver åtgärdas i sin takt, t ex där det är lite eftersatt.\n\nVäxthuset lockar därför till sig en stunds uppmärksamhet. Inte för att något absolut måste göras där inne — utan för att jag ändå råkade hamna där.\nSen gör sig växtligheten samtidigt påmind om att den finns. Buskar behöver klippas längs staketet. Vissna blommor behöver plockas bort. Sen kan det vara något nästan meditativt med det där, att röja utan att egentligen ha planerat det.\n\nNär man till slut stannar upp och ser sig om märker man att kanske bordet behöver en liten renovering. Det kommer nya saker hela tiden.\n\nGrannarna dök upp som grannarna gör på en koloni. Välbehövda paus med vattenpåfyllning likaså. Dagen fick ta den tid den ville, det är ju ändå semester…",
+    "images": [
+      "bilder/2026-06-29/2026-06-29_141027.jpg",
+      "bilder/2026-06-29/2026-06-29_184502.jpg",
+      "bilder/2026-06-29/2026-06-29_184334.jpg",
+      "bilder/2026-06-29/2026-06-29_131500.jpg"
+    ]
+  },
+  {
     "id": 4,
     "date": "2026-06-28",
     "title": "En rektangel i gräset",
