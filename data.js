@@ -1,6 +1,13 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 6,
+    "date": "2026-06-30",
+    "title": "Dagen utan bilder",
+    "body": "Man skulle kunna säga att jordens tyngd inte är metaforisk. Den är konkret och mäts ibland i skottkärrslast och ryggmuskler.\n\nGräsbrytningen fortsatte idag. Parasollen hade fått en ny plats sedan förra gången — och det visade sig vara klokt. Skuggan där under blev en sorts oas när pauserna behövdes, stilla och sval, som om någon medvetet satt dit en viloplats mitt i allt annat.\n\nMitt i grävandet kom plötsligt en stor ambulans smygande längs vägen. Inte med sirener och blåljus, som man brukar uppleva ambulanser på utryckning, utan i krypfart, nästan onödigt försiktigt. Det gjorde att jag i alla fall kom av mig helt, la ifrån mig spaden utan att riktigt bestämma mig för det. Pulsen gick upp och tankarna for runt. Vad har hänt nu? Det är vid sådana tillfällen man påminns om att livet pågår parallellt — på någon annans lott, längs samma väg man själv cyklade hit för en stund sen.\n\nDet var inte allvarligt, visade det sig senare. Ambulansen åkte igen. Spaden plockades upp i tron om att allt skulle nog bli bra ändå. Då uppenbarade sig två mördarsniglar.\n\nJag böjde mig ner och plockade upp dem. Jag odlar ingenting i år, så var de var på väg och var de kom ifrån är oklart. De verkade i alla fall ha ett ärende, då de kom i ett följe. Kanske passerade de bara. Nu fick de i alla fall också ett nytt boende — på baksidan.\n\nJag skulle precis ta fram telefonen för att dokumentera dagens arbete — sniglarna, grävningen, beviset på att något faktiskt händer här — när jag såg att batteriindikatorn visade 1 % och sedan slocknade allt. Det finns tydligen dagar som inte vill bli berättade i bild. Den 30 juni är tydligen en av dem.",
+    "images": []
+  },
+  {
     "id": 5,
     "date": "2026-06-29",
     "title": "Nya adresser",
