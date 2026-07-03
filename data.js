@@ -1,6 +1,13 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 8,
+    "date": "2026-07-02",
+    "title": "Innan regnet",
+    "body": "När man vaknar vid elva så känns det att det är semester, dessutom Natt-VM på teve. Det är ingen ursäkt – det är bara hur det är beskrivet. Lite lugn har letat sig fram i alla fall första veckan.\n\nEn snabb kik genom fönstret visar mulet, en lättare oro spred sig... Det krävde en extra kontroll på Regnradarn, som tyvärr bekräftade mina misstankar om kommande regn. Ett väldigt brett område med regn var på väg in över stora delar av södra Sverige och drog metodiskt långsamt österut in över landet, kanske hade jag nån eller några timmar på mig?\n\nVissa kallar det oväder, jag har alltid undrat över det där O:et i oväder – det är ju egentligen bara väder hela tiden. Vem har bestämt vad som är just oväder? När det regnar så är det ju väldigt mycket väder. O brukar ju användas för att ta bort betydelsen Otrygg, Osäker osv…\n\nJag insåg i alla fall att, skulle det bli nåt gjort idag innan regnet, så var det dags att vrida på sig byxorna och åka direkt.\n\nUnder bilturen, innan allt det andra tog vid, låg det något stilla i att veta att grävningen är klar. Inte färdig för alltid – mätningen kommer avgöra om något mer behöver justeras – men klar nog. Det är en bra känsla att bära med sig på vägen.\n\nPlankan från igår sattes fast, några nya plankor lossades och slipades, en oljades inne i växthuset som fick en ny roll som målarverkstad.\n\nJag hade med trimmern med ett skärblad på, så jag passade på att testa den, vad den kunde användas till. Gick och testade hos en granne som hade lite längre gräs och provröjde lite på den tomten. Den klarade både gräs och lite grenar/buskar. Jag fick en test och grannen fick lite hjälp.\n\nDe mörkblå molnen blev allt kraftigare och luften ändrade ton och det var bara att inse att det nog var dags nu för en hemfärd.\n\nDet var sista arbetet denna vecka, för i helgen blir det utflykt. Så ett ev regn oroade ändå inte för helgen.\n\nJag kom faktiskt ända hem innan vattenguden släppte loss det så kallade ovädret.\n\nSenare, när jag satt på balkongen med en kopp i handen och lyssnade på regnet, tänkte jag på plankan som låg och torkade inne i växthuset. Torr, skyddad, på rätt plats, redo för att monteras nästa gång.\n\nIbland räcker det med att ha ordnat en sak ordentligt för att få en go känsla...",
+    "images": []
+  },
+  {
     "id": 7,
     "date": "2026-07-01",
     "title": "Det sista gräset",
