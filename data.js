@@ -1,6 +1,22 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 10,
+    "date": "2026-07-07",
+    "title": "Regn i luften",
+    "body": "En vilodag. Det låter försvarligt när man säger det högt — men i praktiken var det vädret som bestämde. Grått från morgonen, regn som aldrig riktigt föll men hela dagen låg tungt i luften, som en kommentar man inte behövde svara på.\n\nInget bygge. Inte igår heller, om man ska vara ärlig. Bygget kanske också behöver pausa ibland, även om lotten inte skulle säga det högt.\n\nJag höll mig hemma. Regnet kom väl till slut, utanför fönstret. Det är också semester.",
+    "images": []
+  },
+  {
+    "id": 9,
+    "date": "2026-07-06",
+    "title": "En normal kolonidag",
+    "body": "Bygget väntar. Utsättningshjälpen är inte här än, och det finns en gräns för vad man gör på egen hand innan nästa steg faktiskt kräver fler händer. Så blev det ingen byggdag — men en kolonidag, vilket är något annat.\n\nVäxthuset fungerar som målarverkstad igen. Plankorna ligger på bockar, nyoljade, med den där blanka ytan som luktar innan den hinner torka ordentligt. Långsamt arbete, slipning och oljning, men det har sin egen takt. Man ser skillnaden plank för plank.\n\nBaksidan fick en stunds uppmärksamhet — rensning, ordning där det lätt blir eftersatt när blicken hela tiden dras mot det som ska byggas. Hos en granne kapade jag träd som växt sig för höga. Jag fick öva motorsågen. Grannen fick luft.\n\nEn vanlig dag, om man tänker efter. Inte dålig — bara inte den sortens dag där något nytt växer fram ur jorden. Ibland underhåller man det som redan finns, och väntar.",
+    "images": [
+      "bilder/2026-07-06/2026-07-06_135112.jpg"
+    ]
+  },
+  {
     "id": 8,
     "date": "2026-07-02",
     "title": "Innan regnet",
