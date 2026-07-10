@@ -1,6 +1,16 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 11,
+    "date": "2026-07-08",
+    "title": "Något osynligt blir synligt",
+    "body": "Vädret på dagen börjar inte som byggväder. Det är tråkigt — en kraftig skur som förstör humöret och stämningen lite, som om någon dragit ett grått draperi över hela förmiddagen.\n\nSen, när hjälpen dyker upp och regnet plötsligt slutar. Det är svårt att inte läsa in något i det.\n\nDet knepiga med utsättning är att man behöver vara på två ställen samtidigt. Det kan man inte. Så det är bara att vänta på att bli två.\n\nEtt par timmar med snören fram och tillbaka, pinnar i marken, höjder inmätta. Det låter enkelt. Det är det inte. Väldigt enkelt att göra ett litet mätfel så att huset sen blir snett — och det upptäcker man först när det är försent.\n\nTill slut låg där i alla fall en korsmätt rektangel på tomten. Det var första gången grävningen fick sin återkoppling — om det blev rätt, om kanterna hamnade där de skulle. Och viktigast: för första gången stod det klart exakt var huset ska stå.\n\nDet är en märklig känsla, att se något osynligt bli nästan synligt.",
+    "images": [
+      "bilder/2026-07-08/2026-07-08_163640.jpg",
+      "bilder/2026-07-08/2026-07-08_163647.jpg"
+    ]
+  },
+  {
     "id": 10,
     "date": "2026-07-07",
     "title": "Regn i luften",
