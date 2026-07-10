@@ -1,6 +1,20 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 12,
+    "date": "2026-07-10",
+    "title": "Vevande i leran",
+    "body": "Det känns inte som sommar, trots att solen ibland visar sig — lite, som om den inte riktigt vågar. Vädret ligger oroligt i luften. Jag bär en tyst fråga med mig: Hinner jag, innan lågtrycket slår till?\n\nBordet först. Inte det viktigaste, men det har prio pga vädret, som inte ser ut att hålla nederbörden inne? På ena sidan sitter färgen fortfarande och flagnar. På andra sidan har plankorna slipats och oljats — nästan klart, några kvar att pilla bort färgen på.\n\nDet är trevligt med lite parallellprojekt, medan molnen hopar sig, det gör att det blir lite omväxling. Jag pratade lite med grannen. Det hör till — hon frågade hur det gick. Det syntes väl på mig att det var svettigt.\n\nSen det jag inte sett fram emot. Pust.\n\nHandborren liknar mest ett isborr — spiral, vev, det eviga varvet — fast det här är jord och lera, och leran vill nästan inte ge med sig. Den krävde övertalning. Jag känner rörelsen direkt i kroppen. Armarna känner något de inte är vana vid.\n\nFem hål i varje längsgående rad — femton totalt. Ett hål i taget, mörkare innanmäte som måste upp och ur. Till slut låg de där, alla femton.\n\nKroppen kändes mör. Jag packade ihop och åkte hem.\n\nNästa gång: Laser, papprör i rätt höjd, ner i hålen, sen fyllas med betong.",
+    "images": [
+      "bilder/2026-07-10/2026-07-10_161925.jpg",
+      "bilder/2026-07-10/2026-07-10_161934.jpg",
+      "bilder/2026-07-10/2026-07-10_161953.jpg",
+      "bilder/2026-07-10/2026-07-10_162004.jpg",
+      "bilder/2026-07-10/2026-07-10_162014.jpg",
+      "bilder/2026-07-10/2026-07-10_173436.jpg"
+    ]
+  },
+  {
     "id": 11,
     "date": "2026-07-08",
     "title": "Något osynligt blir synligt",
