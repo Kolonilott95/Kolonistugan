@@ -1,6 +1,20 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 13,
+    "date": "2026-07-11",
+    "title": "Ungefär lika enkelt som det låter",
+    "body": "Grovborrningen var gjord. Det som återstod lät som en detalj — göra hålen raka. Ungefär lika enkelt som det låter, vilket i praktiken betyder att ingenting är enkelt alls.\n\nJag åkte och köpte gjutrör, grovbetong och några armeringsjärn. Det blev glass och kaffe också, för att hålla humöret uppe. Ibland behöver en dag en sidogrej innan det riktiga arbetet får börja. Sen tillbaka.\n\nEtt snett hål blir inte rakt av sig självt. Det krävdes lite hackande, lite sand i omgångar, justering, mer sand, mer justering — samma rörelse om och om igen, som om marken förhandlade. Och när röret väl stod ungefär rakt dök nästa faktor upp: Det skulle också vara lika högt som grannröret. Tumstock först, vattenpass sen. Det är den sortens arbete där varje lösning föder ett nytt problem, och jag lär mig inte bli förvånad över det.\n\nHålen hade fått lite djup av grovborrningen, så det gick åt nästan en hel säck betong per hål. Jag hade köpt tre provsäckar. Det blev alltså tre plintar — inte femton, inte idag.\n\nMedan betongen brann passade jag på att skruva ihop bordsdelen ordentligt. Det är något nästan meditativt med att ha två saker igång samtidigt — det ena väntar, det andra går framåt. Som att lotten tillåter parallellt arbete så länge man inte stressar.\n\nNu ska höjderna mätas in en gång till. Men inte idag.",
+    "images": [
+      "bilder/2026-07-11/2026-07-11_143109.jpg",
+      "bilder/2026-07-11/2026-07-11_144933.jpg",
+      "bilder/2026-07-11/2026-07-11_145002.jpg",
+      "bilder/2026-07-11/2026-07-11_154146.jpg",
+      "bilder/2026-07-11/2026-07-11_154156.jpg",
+      "bilder/2026-07-11/2026-07-11_183229.jpg"
+    ]
+  },
+  {
     "id": 12,
     "date": "2026-07-10",
     "title": "Vevande i leran",
