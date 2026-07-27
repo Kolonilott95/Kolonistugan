@@ -1,6 +1,18 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 14,
+    "date": "2026-07-27",
+    "title": "Inneboende",
+    "body": "Det första som mötte mig var inte bygget. Det var en något irriterad och överraskad talgoxefamilj.\n\nSen sist hade de fått barn. När jag öppnade växthusdörren hördes det tydligt att ungarna tyckte det var olämpligt. Jag har haft småtama talgoxar i femton år, så det var egentligen ingen stor överraskning. Jag pratade lite med dem och de lugnade ner sig snabbt. De har valt växthuset som holk sedan 2019, när det nya stod klart. Innan dess bodde de någon annanstans, när jag tänker efter. Hur de får barnen att behålla den här adressen — hur fåglar i allmänhet, och talgoxar i synnerhet, programmerar sina ungar att flytta tillbaka nästa år — det vet jag inte. Men det är trevligt att ha inneboende. En stor etta får man säga att de har, med utsikt. Ungarna kan ju testflyga inomhus. Kan till och med välja riktning utan att blåsa bort. I morgon får de frö.\n\nSemesterresor och mindre roligt väder hade satt bygget på paus. Skånska Byggvaror kan ändå inte leverera förrän i september — efter att semestern är slut — så det har inte varit så bråttom med plintarna. Nu var det äntligen tillräckligt bra för att göra lite. Det låter blygsamt. Det är det också. Fyra plintar kvar. Inte många. Under semestern ska de vara klara — och det blir de. Sen är det grus och plast som ska till. I september är det redan mörkt på kvällarna. Då lär det bli stressigt.\n\nFörsta mätningen hade förskjutit sig. Murphys lag. Jag hade borrat fel. Jag kontrollmätte och fick borra om hålen lite grann. Östra sidan blev djupare. Marken lutar ju lite, och det märks först när man står där med röret i handen. Sedan mer betong, mer rör, mer snören. Laser på stativ. Det går framåt, men i den sortens steg man knappt märker förrän man tittar bakåt. Det går åt mer betong än man trodde. Det brukar det.\n\nSista brädorna på bordet fick slipas och målas. Det är bra att ha något som går framåt medan det andra tar sin tid.",
+    "images": [
+      "bilder/2026-07-27/2026-07-27_185517.jpg",
+      "bilder/2026-07-27/2026-07-27_185523.jpg",
+      "bilder/2026-07-27/2026-07-27_185527.jpg",
+      "bilder/2026-07-27/2026-07-27_185536.jpg"
+    ]
+  },
+  {
     "id": 13,
     "date": "2026-07-11",
     "title": "Ungefär lika enkelt som det låter",
