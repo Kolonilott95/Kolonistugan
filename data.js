@@ -1,6 +1,13 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 15,
+    "date": "2026-07-28",
+    "title": "Två till",
+    "body": "Eftermiddagen gick åt till inköp. Uppskattat resterande gjutningar — den sortens beräkning man gör med viss ödmjukhet, eftersom det brukar gå åt mer än man trodde. Det brukar det.\n\nSen tillbaka. Två plintar blev det. Inte många, men två. Två kvar.\n\nKvällen var lugn och lite solig. Aningen blåsigt också. Långt ifrån en varm sommarkväll — mer den där stillsamma sorten där man står en stund och tittar på det som stelnar, utan brådska.\n\nI morgon spår vädermannen regn. De två sista kanske blir en annan dag. Vi får se.",
+    "images": []
+  },
+  {
     "id": 14,
     "date": "2026-07-27",
     "title": "Inneboende",
