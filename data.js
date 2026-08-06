@@ -1,6 +1,30 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 17,
+    "date": "2026-08-05",
+    "title": "Två lass till",
+    "body": "Ny dag. Samma loop.\n\nFick veta att släpkärran blir upptagen ett tag efter den här dagen, så det kan behöva lösas på annat sätt. Idag hanns det bara med två lass. Å andra sidan: Att ösa grus för hand är jobbigt nog att sprida ut och kroppen håller med, även när kalendern säger något annat.\n\nDet behöver nog bli minst ett lass till innan höjden på gruset blir helt horisontell. Ovanpå detta första lager ska det sen vara plast — duken tar ogräset och plasten tar fukten. Så först den här tunga, gråa ytan som växer fram lass för lass. Sen ett tunnt lager ovanpå plasten. Så börjar grunden se ganska klar ut, trots allt.",
+    "images": [
+      "bilder/2026-08-05/2026-08-05_163138.jpg",
+      "bilder/2026-08-05/2026-08-05_163211.jpg",
+      "bilder/2026-08-05/2026-08-05_173032.jpg",
+      "bilder/2026-08-05/2026-08-05_203745.jpg"
+    ]
+  },
+  {
+    "id": 16,
+    "date": "2026-08-04",
+    "title": "Enkelt att lasta",
+    "body": "All lös jord behövde bli bortskrapad. Markduk blev sen inköpt och även monterad. Det är den sortens arbete som man aldrig ser när det är klart — arbete som endast syns för den som är med under tiden grunden växer fram. En brun yta som blir en vit yta, plintarna som öar. Sen ska allt täckas och bli en grå yta.\n\nSläpkärra fixad. Sen hämta grus. Att lasta var enkelt — lastmaskin, en rörelse, klart. Lastningen är nog den roligaste delen av grusarbetet, får man säga. Att tömma kärran var något annat. Skyffel. För hand. Skillnaden mellan lastmaskin och skyffel är ungefär skillnaden mellan semester och arbete.\n\nEtt lass denna dag. Jag startade sent. När det var dags för fotografering hann det bli mörkt.",
+    "images": [
+      "bilder/2026-08-04/2026-08-04_markduk.jpg"
+    ],
+    "videos": [
+      "bilder/2026-08-04/2026-08-04_lastmaskin.mp4"
+    ]
+  },
+  {
     "id": 15,
     "date": "2026-07-28",
     "title": "Två till",

@@ -73,6 +73,8 @@
   .entry-body { font-size: 0.9rem; color: #555; line-height: 1.7; white-space: pre-wrap; }
   .entry-images { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
   .entry-img { width: 100px; height: 78px; object-fit: cover; border-radius: 7px; border: 1px solid #e5e9f0; cursor: pointer; }
+  .entry-videos { margin-top: 12px; display: flex; flex-direction: column; gap: 10px; }
+  .entry-video { width: 100%; max-width: 480px; border-radius: 8px; border: 1px solid #e5e9f0; background: #000; }
 
   #empty-state { text-align: center; padding: 3rem 1rem; color: #bbb; font-size: 1rem; }
 
@@ -171,11 +173,15 @@ function render() {
       const imgs = (e.images||[]).map((src,i) =>
         `<img class="entry-img" src="${src}" onclick="lightbox('${e.id}',${i})" alt="Byggbild">`
       ).join('');
+      const vids = (e.videos||[]).map(src =>
+        `<video class="entry-video" src="${src}" controls playsinline preload="metadata"></video>`
+      ).join('');
       return `<article class="entry-card" id="e-${e.id}">
         <div class="entry-date">${new Date(e.date).toLocaleDateString('sv-SE',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}</div>
         <div class="entry-title">${e.title}</div>
         ${e.body ? `<div class="entry-body">${e.body}</div>` : ''}
         ${imgs ? `<div class="entry-images">${imgs}</div>` : ''}
+        ${vids ? `<div class="entry-videos">${vids}</div>` : ''}
       </article>`;
     }).join('');
     return `<section class="month-section" data-month="${month}"><div class="month-heading">${month}</div>${cards}</section>`;
