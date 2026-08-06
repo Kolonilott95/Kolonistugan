@@ -19,9 +19,6 @@ const entries = [
     "body": "All lös jord behövde bli bortskrapad. Markduk blev sen inköpt och även monterad. Det är den sortens arbete som man aldrig ser när det är klart — arbete som endast syns för den som är med under tiden grunden växer fram. En brun yta som blir en vit yta, plintarna som öar. Sen ska allt täckas och bli en grå yta.\n\nSläpkärra fixad. Sen hämta grus. Att lasta var enkelt — lastmaskin, en rörelse, klart. Lastningen är nog den roligaste delen av grusarbetet, får man säga. Att tömma kärran var något annat. Skyffel. För hand. Skillnaden mellan lastmaskin och skyffel är ungefär skillnaden mellan semester och arbete.\n\nEtt lass denna dag. Jag startade sent. När det var dags för fotografering hann det bli mörkt.",
     "images": [
       "bilder/2026-08-04/2026-08-04_markduk.jpg"
-    ],
-    "videos": [
-      "bilder/2026-08-04/2026-08-04_lastmaskin.mp4"
     ]
   },
   {
