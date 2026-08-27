@@ -1,6 +1,29 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 19,
+    "date": "2026-08-13",
+    "title": "Kärran på knäna",
+    "body": "Ett lass. Extra mycket — för att slippa en extra körning. Kärran gick på knäna.\n\nEtt tunt lager grus ovanpå plasten — inte för höjdens skull den här gången, utan för att hålla den på plats. Sen lasermätning. Kontrollera vad som behöver justeras.\n\nNästa steg: Mellanlägg i tryckt virke. Tunna, tunna skivor — vi pratar tre till trettio millimeter. Där betongen packat sig själv olika. Troligen lite mer vatten i vissa plintar; när betongen brinner beter den sig givetvis annorlunda. Så bottenramen ska bli så plan som möjligt, med så lite differenser som det går. Det är den sortens precision som kommer efter det tunga — när skyfflandet är klart och millimeterna tar över.",
+    "images": [
+      "bilder/2026-08-13/2026-08-13_153823.jpg",
+      "bilder/2026-08-13/2026-08-13_153859.jpg",
+      "bilder/2026-08-13/2026-08-13_175316.jpg",
+      "bilder/2026-08-13/2026-08-13_175917.jpg",
+      "bilder/2026-08-13/2026-08-13_180945.jpg"
+    ]
+  },
+  {
+    "id": 18,
+    "date": "2026-08-12",
+    "title": "Små öar",
+    "body": "Två lass. Gratiskärra från freetrailer. Fram och tillbaka.\n\nMarkduken försvann sakta under gruset — mer och mer täckt. Det var svettigt. Ryggen höll. Ingen brådska. Leveransen kommer först i september.\n\nInnan kvällen låg plintarna som små öar i den grå ytan. Sen kom plasten på — med avrinningslutning. Det som planerats sedan tidigare, nu gjort.",
+    "images": [
+      "bilder/2026-08-12/2026-08-12_164803.jpg",
+      "bilder/2026-08-12/2026-08-12_164820.jpg"
+    ]
+  },
+  {
     "id": 17,
     "date": "2026-08-05",
     "title": "Två lass till",
