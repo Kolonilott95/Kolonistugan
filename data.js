@@ -1,6 +1,22 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 23,
+    "date": "2026-10-04",
+    "title": "Uppifrån",
+    "body": "Söndag. Sol. Takluckorna som vilade i växthuset igår ligger nu uppe på takstolarna — som om de alltid hört dit. Stege. Skruv. Den där känslan av att stå högre än igår.\n\nDet är taket som växer fram. Inte golvet. Golvet får vänta.\n\nDet är lite kul, när man tänker efter: Först byggs det nerifrån och upp. Sen uppifrån och ner. Som om huset ville ha det på båda hållen innan det nöjer sig.\n\nMen ett nybyggt tak är oskyddat. Måndagen skulle bli regnig — och det skulle komma att blåsa utta helvete. Så mot kvällen måste det täckas med presenning. Mot fukt. Mot vind. Det är ingen dekoration. Det är förberedelse. Sen ska det tätas på riktigt — så taket klarar sig självt.\n\nEmellanåt tittar man ut över kolonin. Röda stugor, höstgult, himmel. Man behöver den sortens blick ibland. Annars glömmer man varför man står på ett tak en söndag i oktober.",
+    "images": [
+      "bilder/2026-10-04/2026-10-04_134406.jpg",
+      "bilder/2026-10-04/2026-10-04_134541.jpg",
+      "bilder/2026-10-04/2026-10-04_143620.jpg",
+      "bilder/2026-10-04/2026-10-04_143636.jpg",
+      "bilder/2026-10-04/2026-10-04_144709.jpg",
+      "bilder/2026-10-04/2026-10-04_153322.jpg",
+      "bilder/2026-10-04/2026-10-04_153657.jpg",
+      "bilder/2026-10-04/2026-10-04_153711.jpg"
+    ]
+  },
+  {
     "id": 22,
     "date": "2026-10-03",
     "title": "En vän och en pizzeria",
