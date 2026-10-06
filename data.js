@@ -1,6 +1,19 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 21,
+    "date": "2026-10-02",
+    "title": "Provlyft",
+    "body": "Det är kortsidorna som tillverkas. Inte hela huset på en gång — först de kortare väggarna, den sortens arbete där man fortfarande får plats att tänka mellan brädorna.\n\nSen en provlyftning. En kortsida reser sig, står där en stund som om den redan hörde hemma. Det syns på bilden: träet ljust, himlen bakom, och känslan av att något faktiskt växer uppåt.\n\nMen den var tvungen att packas ner igen. Långsidorna behövde tillverkas och resas — och det kräver hjälp. Så kortsidan får vika sig, tillfälligt, som om den förstått att den kommit före sin tur.\n\nDet är en märklig sorts framsteg: Att lyfta något för att sen lägga det ner. Inte bakåt. Bara i rätt ordning.",
+    "images": [
+      "bilder/2026-10-02/2026-10-02_170907.jpg",
+      "bilder/2026-10-02/2026-10-02_170920.jpg",
+      "bilder/2026-10-02/2026-10-02_170924.jpg",
+      "bilder/2026-10-02/2026-10-02_175729.jpg",
+      "bilder/2026-10-02/2026-10-02_180153.jpg"
+    ]
+  },
+  {
     "id": 20,
     "date": "2026-09-26",
     "title": "Millimetrarna tar över",
