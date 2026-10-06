@@ -1,6 +1,26 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 22,
+    "date": "2026-10-03",
+    "title": "En vän och en pizzeria",
+    "body": "Morgonen: Den blå duken täckt av fukt. Solen i vattendropparna. Innan avtäckningen av grundbjälklaget — en stund där lotten fortfarande sover under plast.\n\nPå dagen restes allt. Väggar. Takstolar. Med hjälp av en vän — den sortens hjälp man inte klarar sig utan när något ska stå upp på riktigt.\n\nDet skruvades hela dagen, i omgångar. Emellanåt fikades det. Lunch på närliggande pizzeria, intagen utomhus. Oktober, runt tjugo grader. Det känns nästan otillåtet.\n\nPå kvällen hämtades takluckorna. De fick vila tillfälligt i växthuset — väggarna hade ju tagits ut därifrån och gett plats. En sorts ommöblering av lotten. Det var också en förberedelse för söndagen.\n\nNär mörkret kom stod stommen där. Det som varit brädor på marken på morgonen var plötsligt ett hus man kunde gå in i.",
+    "images": [
+      "bilder/2026-10-03/2026-10-03_095404.jpg",
+      "bilder/2026-10-03/2026-10-03_114444.jpg",
+      "bilder/2026-10-03/2026-10-03_114456.jpg",
+      "bilder/2026-10-03/2026-10-03_154229.jpg",
+      "bilder/2026-10-03/2026-10-03_164601.jpg",
+      "bilder/2026-10-03/2026-10-03_173343.jpg",
+      "bilder/2026-10-03/2026-10-03_180843.jpg",
+      "bilder/2026-10-03/2026-10-03_180903.jpg",
+      "bilder/2026-10-03/2026-10-03_181903.jpg",
+      "bilder/2026-10-03/2026-10-03_182812.jpg",
+      "bilder/2026-10-03/2026-10-03_183114.jpg",
+      "bilder/2026-10-03/2026-10-03_190110.jpg"
+    ]
+  },
+  {
     "id": 21,
     "date": "2026-10-02",
     "title": "Provlyft",
