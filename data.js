@@ -62,6 +62,18 @@ const entries = [
     ]
   },
   {
+    "id": 24,
+    "date": "2026-09-20",
+    "title": "Äntligen",
+    "body": "Man kan avfärda en leveransdag som bara logistik. Truck. Truck. Plast. Klart.\n\nEller så stannar man upp.\n\nEfter många förseningar kommer det till slut — det som legat i mejl och ombokningar och en sorts tyst irritation. Plötsligt står det där på gruset: paket man kan gå runt, knacka på, lukta på. Virke. Stål. Det som ska bli hus.\n\nChauffören är trevlig. Inte en stor sak, kanske. Men när man väntat länge räcker en trevlig människa längre än man tror. Det är också en vinkel.\n\nEn kartong har gått sönder under färden. Balkskorna tittar fram genom plasten, blanka i septemberljuset. Det är okej. De ska ändå ut. Det finns något att få ut av nästan allt — även av en trasig förpackning.\n\nNu kan allvaret börja. Inte jordens allvar. Det andra: Från grund till hus. Det synliga. Det som andra kanske kallar enkelt — men som just idag får en fast bostad i hjärtat.",
+    "images": [
+      "bilder/2026-09-20/2026-09-20_111744.jpg",
+      "bilder/2026-09-20/2026-09-20_112709.jpg",
+      "bilder/2026-09-20/2026-09-20_113412.jpg",
+      "bilder/2026-09-20/2026-09-20_113818.jpg"
+    ]
+  },
+  {
     "id": 19,
     "date": "2026-08-13",
     "title": "Kärran på knäna",
