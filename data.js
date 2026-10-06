@@ -4,7 +4,7 @@ const entries = [
     "id": 20,
     "date": "2026-09-26",
     "title": "Millimetrarna tar över",
-    "body": "Plintarna har fått nummer. Det är en sorts allvar — som att det som stått anonyma i gruset plötsligt fått adresser.\n\nMellanläggen ligger bredvid. Tunna skivor. Den sort man knappt tror ska bära något, men som avgör om ramen blir plan eller snett för alltid. Tre millimeter här, trettio där. Där betongen packat sig själv olika.\n\nSen ska grundbjälklaget sättas ihop. Reglar. Balkskor. Vattenpass. På några timmar ligger det där som ett löfte om golv — ljust trä över grå yta, med hösten som redan börjat färga staketet rött bakom.\n\nPå kvällen åker den blå duken på. Det man byggt ska få sova ostört.",
+    "body": "Äntligen har paketen kommit. Det som legat i väntan är plötsligt virke man kan ta i. Då går det att lägga till — på riktigt. Nu börjar det synliga att växa fram.\n\nPlintarna har fått nummer. Det är en sorts allvar — som att det som stått anonyma i gruset plötsligt fått adresser.\n\nMellanläggen ligger bredvid. Tunna skivor. Den sort man knappt tror ska bära något, men som avgör om ramen blir plan eller snett för alltid. Tre millimeter här, trettio där. Där betongen packat sig själv olika.\n\nSen sätts grundbjälklaget ihop. Reglar. Balkskor. Vattenpass. På några timmar ligger det där som ett löfte om golv — ljust trä över grå yta, med hösten som redan börjat färga staketet rött bakom.\n\nPå kvällen åker den blå duken på. Det man byggt ska få sova ostört.",
     "images": [
       "bilder/2026-09-26/2026-09-26_172815.jpg",
       "bilder/2026-09-26/2026-09-26_172831.jpg",
