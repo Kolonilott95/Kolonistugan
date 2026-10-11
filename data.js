@@ -1,6 +1,16 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 25,
+    "date": "2026-10-11",
+    "title": "Innan regnet",
+    "body": "Dropp-plåten sitter. En smal svart kant längs takfoten. Den ska se till att vattnet går dit det ska, och inte dit det vill.\n\nStödregeln för kantlisten är på plats. Trekantlisterna också, men bilder på dem finns inte. Regnet hade andra planer.\n\nDet gick nämligen till så här: När sista spiken slogs i listen kom de första dropparna. Inte efter. Inte strax efter. Samtidigt. Som om någon hade stått och väntat på signalen.\n\nSå blev det presenning igen. Snabbt, lite snett, men över. Ett nytt tak ska inte bli blött innan det ens hunnit bli ett tak.\n\nNästa steg skulle ha varit underlagspapp, Coverall. Det blev en inköpsrunda i stället. Ytpapp. Skruv. Snören. Handskar. Och några mindre presenningar till väggarna, som också har börjat undra varför bara taket får täcke.\n\nSå går det ibland. Man tänker bygga och slutar med att handla. Men det är också bygge, på sitt sätt. Allt i påsarna är morgondagens tak.",
+    "images": [
+      "bilder/2026-10-11/2026-10-10_181008.jpg",
+      "bilder/2026-10-11/2026-10-11_113610.jpg"
+    ]
+  },
+  {
     "id": 23,
     "date": "2026-10-04",
     "title": "Uppifrån",
