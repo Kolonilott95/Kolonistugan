@@ -1,6 +1,16 @@
 // Byggdagbok – inlägg och bildsökvägar
 const entries = [
   {
+    "id": 26,
+    "date": "2026-10-14",
+    "title": "Tack, granen",
+    "body": "Molnigt hela dagen. Den sortens himmel som inte lovar något, men inte heller lovar bort något. Regnet hängde i luften och väntade.\n\nMålet är enkelt att säga: tak på före vintern. Vindpapp på väggarna. Enkelt att säga, alltså.\n\nJobbet drog ut på tiden. Klockan var tio i fem innan arbetet på lotten kunde börja. Kvar fanns ungefär en timme. Sen släcks ljuset, och med det går det inte att förhandla.\n\nDet finns en gräns till. Plus fem grader. Under den blir pappen styv och klistret vill inte fästa. Materialet har sina egna regler, och de bryr sig inte om ens kalender. Så nu är det så här: varje ljus timme efter jobbet räknas. Det är inte längre en fråga om när man har lust. Det är en fråga om när det går.\n\nDet blev en våd. Coverall, utrullad, häftad, tejpad. En grå remsa med svarta bokstäver som upprepar sitt eget namn, som om den var rädd att man skulle glömma vad den heter.\n\nDet kan låta lite. Men det är så tak blir till. I lager. Underlagspappen syns aldrig när det är klart. Ytpappen får äran. Men det är den här som tar emot vattnet den dagen något annat brister. Ett ödmjukt jobb. Kanske det viktigaste.\n\nSen slocknade lampan i skyn. Täcket åkte på igen. Och lite senare, nästan artigt, kom regnet. Som om det hade väntat på att man skulle bli klar.\n\nNågonstans där emellan föll stegen. Den stod där, och sen stod den inte där. Man står på ett tak i skymningen och inser att vägen ner just har lagt sig i gräset.\n\nMen granen stod kvar. Den har alltid stått där, högre än allt annat, utan att bry sig om tak. I kväll brydde den sig ändå lite. Gren för gren, ner till marken.\n\nTack för den.\n\nEn våd. En timme. En gran. Det blev något gjort i alla fall. Och i oktober är något mycket.",
+    "images": [
+      "bilder/2026-10-14/2026-10-14_01.jpg",
+      "bilder/2026-10-14/2026-10-14_02.jpg"
+    ]
+  },
+  {
     "id": 25,
     "date": "2026-10-11",
     "title": "Innan regnet",
